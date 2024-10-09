@@ -12,6 +12,9 @@
     <h1>Dhamar Quishpe Rivera</h1>
     <p>Estudiante de Ingeniería en Computación | dquishpe@espol.edu.ec | 0990288713</p>
 </header>
+<section>   
+    <img src="https://placehold.co/300x200" alt="Placeholder Image" width="300" height="200">
+</section>
 <nav>
     <ul>
         <li><a href="#resumen">Resumen</a></li>
@@ -42,7 +45,34 @@
     <section id="proyectos">
         <h2>Proyectos</h2>
     </section>
-    </main>
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        No soporta el video tag.
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xvz0E5OEFV0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Incluir los archivos de Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Contenedor del mapa -->
+<div id="map" style="width: 600px; height: 400px;"></div>
+
+<script>
+  // Crear el mapa
+  var map = L.map('map').setView([51.505, -0.09], 13);
+
+  // Agregar capa de mapa
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+</script>
+<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen 
+  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJd8BlQ2BZwokRAFUEcm_qrcA&key=TU_API_KEY">
+</iframe>
+
+</main>
     <footer>
         <p>© Dhamar Quishpe Rivera - 2023</p>
         <ul>
