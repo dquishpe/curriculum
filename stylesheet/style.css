@@ -83,3 +83,45 @@
     justify-content: space-around;
  
 }
+
+section form {
+
+  /* Modelo de diseño en cuadrícula */
+  display: grid;									
+  row-gap: 0.5rem;
+
+}
+
+#resumen {
+
+  /* Modelo de diseño flexible */
+display: flex;
+
+/* Distribuye el espacio entre y alrededor
+   de los items en el eje principal */
+justify-content: space-evenly;
+
+
+/* Alinea los elementos al centro dentro
+   del bloque respecto con el eje transversal */
+align-items: center;
+
+/* Eje principal: por columna */
+flex-direction: column;
+
+/* Altura de 24% del área de visualización */
+height: 24vh;
+
+/* Apilamiento de elementos: ajustado 
+hasta ocupar el máximo */
+flex-wrap: wrap; 
+
+}
+
+#resumen h2, #resumen p {
+width: 50%;
+}
+
+#resumen img {
+  max-width: 50%;
+}
