@@ -555,6 +555,8 @@
     flex: 1; 
     min-width: 300px; 
     padding: 10px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .contact-form iframe {
@@ -562,6 +564,7 @@
     max-height: 500px; 
     background-color: transparent;
     border-radius: 10%;
+    padding-left: 30px;
 }
 
   .contact-form p {
@@ -569,6 +572,7 @@
     background-color: transparent;
     color: rgb(255, 255, 255);
     text-align: center;
+    padding-left: 30px;
   }
 
   .contact-form form {
@@ -618,11 +622,12 @@
     border-radius: 5px;
     font-size: 1em;
     resize: none;
-    width: 100%;
+    width: 90%;
     margin-bottom: 30px;
     margin-top: 5px;
     background-color: transparent;
     color: rgb(255, 255, 255);
+    justify-items: center;
   }
 
   .input-box label {
