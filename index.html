@@ -2,136 +2,230 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Dhamar Quishpe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/d-key.png" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 <body>
-<header>
-    <h1>Dhamar Elizabeth Quishpe Rivera</h1>
-    <p>Estudiante de Ingeniería en Computación | dquishpe@espol.edu.ec | 0990288713</p>
-</header>
-<section>   
-    <img id="photo" src="https://img.freepik.com/foto-gratis/lindo-gato-biblioteca_23-2150932271.jpg" alt="photo">
-</section>
-<nav>
-    <ul>
-        <li><a href="#resumen">Resumen</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-    </ul>
-</nav>
-<main>
-    <section id="resumen">
-        <h2 class="subtitle">Resumen</h2>
-        <p>Breve descripción de tus habilidades y experiencia.</p>
-        <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
+    <header class="navbar">
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>My Currículum Vitae</span>
+            </div>
+            <div class="links">   
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#experience">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i> 
+        </div>
+    </nav>
+    </header>
+    <section id="home">
+        <div class="main-container" data-aos="zoom-in-right" data-aos-duration="3000">
+            <div class="image">
+                <img src="/foto.png" alt="Imagen">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Dhamar Quishpe</span></h1>
+                <h2 class="typing-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">I'm a <span></span></h2>
+                <p data-aos="flip-up" data-aos-duration="1500" data-aos-delay="1100">Computer Science Engineering Student</p>
+                <div class="social-links">
+                    <a href="https://github.com/dquishpe" target="_blank" aria-label="GitHub" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1200"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhamar-quishpe-280035229/" aria-label="Linkedin" target="_blank" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sweetdhami?igsh=bmJsZGN5YTJzNWky&utm_source=qr" aria-label="Instagram" target="_blank" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1700">
+                    <button>CONTACT ME</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="experiencia">
-        <h2 class="subtitle">Experiencia</h2>
+    <section id="about" class="container">
+        <div class="column">
+            <h2>About Me</h2>
+            <p>Hi, I'm Dhamar, a Computer Science Engineering student at the Escuela Superior Politécnica del Litoral, passionate about the transformative potential of technology.</p> 
+            <p>From the first code I wrote, I fell in love with <strong>programming</strong> and its possibilities. I specialized in data science, artificial intelligence, and web development, and delved into languages ​​​​such as Python, JavaScript, and Java, which I use to build applications and solutions aimed at solving real problems.</p>
+            <p>Additionally, I firmly believe in the power of diversity in technology and I hope to be an inspiration for more women to join this field.</p>
+            <p>I had the privilege of working as a Management Assistant in the computer labs at my university, where I developed my skills in solving technical and administrative challenges. <br><br> I also served as a Teaching Assistant for Programming Fundamentals, an experience that allowed me to hone my communication and teaching skills.</p>
+        </div>
+        <div class="column">
+            <h2>Skills and Tools</h2>
+            <div id="skills">
+                <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
+                    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino"/>
+                </a>
+                <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c"/>
+                </a>
+                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/>
+                </a>
+                <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma"/>
+                </a>
+                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/> 
+                </a> 
+                <a href="https://www.java.com" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" /> 
+                </a> 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"/> 
+                </a>  
+                <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/> 
+                </a>
+                <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" /> 
+                </a> 
+                <a href="https://www.python.org" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" /> 
+                </a> 
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react"/> 
+                </a> 
+                <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> 
+                    <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" /> 
+                </a> 
+            </div>
+            <hr class="line">
+            <div id="experience" class="experiences">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Management Assistant in Computer Labs at ESPOL - 2024</li>
+                    <li>Teaching Assistant for Programming Fundamentals - 2023</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section id="educacion">
-        <h2 class="subtitle">Educación</h2>
-        <ol>    
-            <li>Ingeniería en Computación - ESPOL (2022-Actualidad)</li>
-            <li>Bachiller en Ciencias - Unidad Educativa José María Velasco Ibarra (2015-2021) </li>
-        </ol>
+    <section id="projects">
+        <hr class="line">
+        <h1 class="section-heading">Projects</h1>
+        <div class="cards">
+            <div class="card">
+                <span class="new-tag">19/08/2024</span>
+                <div class="info-block">
+                    <span class="title">POLINATOR</span>
+                    <span class="sub-title">Game that guesses what you think, using data structures such as binary trees.</span>
+                </div>
+                <img src="/polinator.png" alt="imagen del proyecto" />
+                <div class="card-footer">
+                    <span class="details">Access the repository on GitHub >>></span>
+                    <a class= btn-primary href="https://github.com/randyRivera0/Polinator.git" target="_blank" class="button-link">Click</a>
+                </div>
+            </div>
+            <div class="card">
+                <span class="new-tag">10/06/2024</span>
+                <div class="info-block">
+                    <span class="title">AUTO IDEAL</span>
+                    <span class="sub-title">Java application for selling used cars. Using data structures.</span>
+                </div>
+                <img src="/tuautoideal.png" alt="imagen del proyecto" />
+                <div class="card-footer">
+                    <span class="details">Access the repository on GitHub >>></span>
+                    <a class= btn-primary href="https://github.com/leozam02/ProyectoEstructura1p.git" target="_blank" class="button-link">Click</a>
+                </div>
+            </div>
+            <div class="card">
+                <span class="new-tag">31/08/2024</span>
+                <div class="info-block">
+                    <span class="title">REPO ESPOL</span>
+                    <span class="sub-title">Repository of educational material for ESPOL students, using MySQL for the database.</span>
+                </div>
+                <img src="/edurepo.png" alt="imagen del proyecto" />
+                <div class="card-footer">
+                    <span class="details">Access the repository on GitHub >>></span>
+                    <a class= btn-primary href="https://github.com/randyRivera0/EduRepoEspol.git" target="_blank" class="button-link">Click</a>
+                </div>
+            </div>
+        </div>
+        <hr class="line">
     </section>
-    <section id="habilidades">
-        <h2 class="subtitle">Habilidades</h2>
+    <section class="frase">
+        <p id="frase-cs">
+            "First, solve the problem. Then, write the code." <strong>  — John Johnson</strong>
+        </p>
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/BILFn9eQOr0?si=hhUH4Qqin3e_26FC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
-    <section id="proyectos">
-        <h2 class="subtitle">Proyectos</h2>
+    <hr class="line">
+    <section id="contact">
+        <h1 class="section-heading">Contact</h1>
+        <div class="final-container">
+            <div class="contact-form">
+                <p>
+                    If you wish to contact me in person, I would be delighted to welcome you at the Escuela Superior Politécnica del Litoral. You can see the location on the map below. <strong>I hope to see you soon!</strong>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.01517936961!2d-79.96714432688222!3d-2.1478748371709058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1730169741314!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <p class="message-title">
+                    <strong>SEND ME A MESSAGE!</strong><br>
+                    &#9997
+                </p>
+                <form action="#submit">
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Dhamar Quishpe" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" id="message" placeholder="Hello..." required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="boton">
+                        <button id="submit">Send &#9993</button>
+                    </div>
+                </form>
+            </div>   
+        </div>
     </section>
-    <video width="640" height="360" controls>
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.ogg" type="video/ogg">
-        No soporta el video tag.
-    </video>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xvz0E5OEFV0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <!-- Incluir los archivos de Leaflet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<!-- Contenedor del mapa -->
-<div id="map" style="width: 600px; height: 400px;"></div>
-
-<script>
-  // Crear el mapa
-  var map = L.map('map').setView([51.505, -0.09], 13);
-
-  // Agregar capa de mapa
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-</script>
-<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen 
-  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJd8BlQ2BZwokRAFUEcm_qrcA&key=TU_API_KEY">
-</iframe>
-<section> 
-<form>
-    <label for="nombre">Nombre Completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="experiencia">Experiencia Laboral:</label>
-    <textarea id="experiencia" name="experiencia" rows="5"
-    required></textarea>
-    <label for="educacion">Educación:</label>
-    <textarea id="educacion" name="educacion" rows="5"
-    required></textarea>
-    <label>Habilidades Técnicas:</label><br>
-    <div><input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span></div>
-    <div></div><input type="checkbox" name="habilidades" value="CSS"> <span>CSS</span></div>
-    <div><input type="checkbox" name="habilidades" value="JavaScript"><span>JavaScript</span></div>
-    <label for="intereses">Intereses:</label>
-    <select id="intereses" name="intereses">
-    <option value="desarrollo">Desarrollo Web</option>
-    <option value="diseno">Diseño Gráfico</option>
-    <option value="marketing">Marketing Digital</option>
-    </select>
-    <button type="submit">Enviar</button>
-    </form>
-</section>
-    <p>
-        Trabajé como desarrollador web en Acme Corporation durante los últimos
-        tres años.
-        Mis responsabilidades incluían el diseño, desarrollo y mantenimiento de
-        sitios web.
-    </p>
-
-    <table>
-        <thead>
-        <tr>
-        <th>Empresa</th>
-        <th>Puesto</th>
-        <th>Años de experiencia</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>Acme Corporation</td>
-        <td>Desarrollador web</td>
-        <td>3</td>
-        </tr>
-        </tbody>
-        </table>
-        
-        
-</main>
     <footer>
-        <p>© Dhamar Quishpe Rivera - 2023</p>
-        <ul>
-            <li><a
-            href="https://www.linkedin.com/in/tunombre" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/dquishpe" target="_blank">GitHub</a></li>
-        </ul>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contact</h3>
+                <p>Email: dquishpe@espol.edu.ec</p>
+                <p>Computer Science Engineer</p>
+            </div>
+            <div class="footer-social">
+                <h3>Social Links</h3>
+                <a href="https://github.com/dquishpe" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dhamar-quishpe-280035229/" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/sweetdhami?igsh=bmJsZGN5YTJzNWky&utm_source=qr" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
-    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script>
+        function hamburg(){
+            const navbar= document.querySelector(".dropdown")
+            navbar.style.transform="translateY(0px)"            
+        }
+        function cancel(){
+            const navbar= document.querySelector(".dropdown")
+            navbar.style.transform="translateY(-400px)"
+        }
+    </script>
+</body>
 </html>
-
-<!-- aqui tmbn puede ir lo de formularios, revisar --> 
